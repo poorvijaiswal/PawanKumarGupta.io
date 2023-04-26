@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="cplus.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<section>
+	<div class="container">
+		<div class="small-part" id="side">
+			<div class="fix">
+				<div class="close" onclick="closeNav()">&times</div>
+				<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+				<ul id="myMenu">
+				  <li id="all" class="programs" data-show=".all" ><a href="#">All Examples</a></li>
+				  <li id="simple-prog" class="programs" data-show=".simple"><a href="#">Simple Programs</a></li>
+				  <li id="if-else" class="programs" data-show=".ifelse"><a href="#">if-else</a></li>
+				  <li id="Switch-case" class="programs" data-show=".switch"><a href="#">Switch-case</a></li>
+				  <li id="loop-statement" class="programs" data-show=".loop"><a href="#">Loop Statements</a></li>
+				  <li id="patterns" class="programs" data-show=".pattern"><a href="#">Patterns</a></li>
+				  <li id="array" class="programs" data-show=".array"><a href="#">Array</a></li>
+				  <li id="functions" class="programs" data-show=".func"><a href="#">Functions</a></li>
+				  <li id="structure-union" class="programs" data-show=".struc-union"><a href="#">Structure and Union</a></li>
+				  <li id="class-object" class="programs" data-show=".class-obj"><a href="#">Class and Object</a></li>
+				  <li id="cons-dest" class="programs" data-show=".cons-dest"><a href="#">Constructor and Destructor</a></li>
+				  <li id="inheritance" class="programs" data-show=".inherit"><a href="#">Inheritance</a></li>
+				  <li id="polymorphism" class="programs" data-show=".polymorphism"><a href="#">Polymorphism</a></li>
+				  <li id="stack" class="programs" data-show=".stack"><a href="#">Stack</a></li>
+				  <li id="queue" class="programs" data-show=".queue"><a href="#">Queue</a></li>
+				  <li id="linked-list" class="programs" data-show=".linked-list"><a href="#">Linked List</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="large-part">
+			<div class="c-head">
+
+					<button onclick="openNav()">
+          			<i class="fa fa-bars"></i>
+      			</button>
+				<h1> C++ Examples</h1>
+				<input type="text" id="all-search" onkeyup="allprogram()" placeholder="Search.." title="Type in a category">
+			</div><br>
+			<div class="c-text">
+				<div class="c-image"><img src="c1.jpg" class="img"></div>
+				<div class="text"></div>
+				<div class="content">
+					<p>C++ is an Object Oriented Programming Language. One of the best ways of learning C++ is by practicing various examples of it.<br><br> This page contains examples on the basic concepts of C++.</p>
+				</div>
+			</div>
+			<div class="popular">
+				<div class="cpart1"></div>
+				<div class="cpart2"></div>
+				<div class="base">
+					<h2>Popular Examples</h2>
+					<div class="division">
+						<div class="pop-ex">
+							<a href="cplus_prog/1hello_world.html">
+								<div>
+									<p class="div-head">C++ Examples</p><br>
+									<p class="c-para">C++ Program to print "Hello World!"</p>
+								</div>
+							</a>
+						</div>
+						<div class="pop-ex">
+							<a href="#">
+								<div>
+									<p class="div-head">C++ Examples</p><br>
+									<p class="c-para">C++ Program to build a Simple Calculator</p>
+								</div>
+							</a>
+						</div>
+						<div class="pop-ex">
+							<a href="#">
+								<div>
+									<p class="div-head">C++ Examples</p><br>
+									<p class="c-para">C++ Program to print Fibonacci Series</p>
+								</div>
+							</a>
+						</div>
+						<div class="pop-ex">
+							<a href="#">
+								<div>
+									<p class="div-head">C++ Examples</p><br>
+									<p class="c-para">C++ Program to create Pyramids and Patterns</p>
+								</div>
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+			<h2 style="padding: 25px 0 0 10px;" class="text-change">All Examples</h2>
+
+			<div class="prog-container">
+
+				<div class="all">
+					<ul id="myProgram">
+						<li><a href="cplus_prog/1hello_world.html"><div class="number">1</div><span>C++ Program to Print "Hello World!"</span></a></li>
+						<li><a href="#"><div class="number">2</div><span>C++ Program to Print Name entered by user.</span></a></li>
+						<li><a href="#"><div class="number">3</div><span>C++ Program to Print Sum of two Numbers.</span></a></li>
+						<li><a href="#"><div class="number">4</div><span>C++ Program to Print Average of two Numbers.</span></a></li>
+						<li><a href="#"><div class="number">5</div><span>C++ Program to find Reverse of Number</span></a></li>
+						<li><a href="#"><div class="number">6</div><span>C++ Program to find Area of a Circle.</span></a></li>
+						<li><a href="#"><div class="number">7</div><span>C++ Program to find the Sum of all digits </span></a></li>
+						<li><a href="#"><div class="number">8</div><span>C++ Program to find the average of marks scored in five subjects.</span></a></li>
+						<li><a href="#"><div class="number">9</div><span>C++ Program to Swap two Numbers using third variable.</span></a></li>
+						<li><a href="#"><div class="number">10</div><span>C++ Program to Swap two Numbers without using third variable.</span></a></li>
+						<li><a href="#"><div class="number">11</div><span>C++ Program to convert Temperature C to F</span></a></li>
+						<li><a href="#"><div class="number">12</div><span>WAP to find the maximum age of two students.</span></a></li>
+						<li><a href="#"><div class="number">13</div><span>WAP to find the largest number among two numbers.</span></a></li>
+						<li><a href="#"><div class="number">14</div><span>WAP to find the largest number among three numbers.</span></a></li>
+						<li><a href="#"><div class="number">15</div><span>WAP to check if the number is Even or Odd.</span></a></li>
+						<li><a href="#"><div class="number">16</div><span>WAP to check whether a year is a leap year or not.</span></a></li>
+						<li><a href="#"><div class="number">17</div><span>WAP to check whether the entered character is a vowel or consonant.</span></a></li>
+
+						<li><a href="#"><div class="number">18</div><span>WAP to make simple calculation for all arithmetic operations (+, -, *, /, %)</span></a></li>
+						<li><a href="#"><div class="number">18</div><span>WAP to check whether the entered character is a vowel or consonant using switch-case.</span></a></li>
+						<li><a href="#"><div class="number">19</div><span>WAP to display day of week as user choice.</span></a></li>
+
+						<li><a href="#"><div class="number">20</div><span>WAP to print Hello World five times.</span></a></li>
+						<li><a href="#"><div class="number">21</div><span>WAP to print natural numbers (1 to 10).</span></a></li>
+						<li><a href="#"><div class="number">22</div><span>WAP to print natural numbers in reverse order (10 to 1).</span></a></li>
+						<li><a href="#"><div class="number">23</div><span>WAP to find the factorial of a number using a while loop.</span></a></li>
+						<li><a href="#"><div class="number">24</div><span>WAP to print Fibonacci series until given terms.</span></a></li>
+						<li><a href="#"><div class="number">25</div><span>WAP to display the sum of n natural numbers where n is entered by the user.</span></a></li>
+						<li><a href="#"><div class="number">26</div><span>WAP to display reverse of any number using loop.</span></a></li>
+						<li><a href="#"><div class="number">27</div><span>WAP to sum all the numbers entered by the users until the user enters 0.</span></a></li>
+						<li><a href="#"><div class="number">28</div><span>WAP to print numbers within the range given by the user.</span></a></li>
+						<li><a href="#"><div class="number">29</div><span>WAP to print number table using multiplication operation.</span></a></li>
+						<li><a href="#"><div class="number">30</div><span>WAP to print number table using addition operation.</span></a></li>
+						<li><a href="#"><div class="number">31</div><span>WAP to generate prime numbers series up to n numbers using for loop.</span></a></li>
+
+						<li><a href="#"><div class="number">32</div><span>WAP to find the sum of all digits of a digit using a loop.</span></a></li>
+						<li><a href="#"><div class="number">33</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div><b>*<br>* *<br>* * *<br>* * * *<br>* * * * *</b></span></a>
+						</li>
+						<li><a href="#"><div class="number">34</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>1<br>1 2 <br> 1 2 3<br> 1 2 3 4<br> 1 2 3 4 5</span></a>
+						</li>
+						<li><a href="#"><div class="number">35</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>A<br> A B<br> A B C<br> A B C D<br> A B C D E</span></a>
+						</li>
+						<li><a href="#"><div class="number">36</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>1<br>2 3<br> 3 4 5<br> 4 5 6 7<br> 5 6 7 8 9</span></a>
+						</li>
+						<li><a href="#"><div class="number">37</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>* * * * *<br>* * * *<br>* * * <br> * *<br>*</span></a>
+						</li>
+						<li><a href="#"><div class="number">38</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>1 2 3 4 5<br> 1 2 3 4<br> 1 2 3<br> 1 2<br>1</span></a>
+						</li>
+						<li><a href="#"><div class="number">39</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>A B C D E<br>A B C D<br>A B C<br>A B<br>A</span></a>
+						</li>
+						<li><a href="#"><div class="number">40</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>1 2 3 4 5<br>2 3 4 5<br>3 4 5<br> 4 5<br>5</span></a>
+						</li>
+						<li><a href="#"><div class="number">41</div>
+							<span style="padding-left: 10px;">WAP to print pattern
+								<pre>        *</pre><pre>      * *</pre><pre>    * * *</pre><pre>  * * * *</pre><pre>* * * * *</pre></span></a>
+						</li>
+						<li><a href="#"><div class="number">42</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+								<pre>            1</pre>
+								<pre>         1 2</pre>
+								<pre>      1 2 3</pre>
+								<pre>   1 2 3 4</pre>
+								<pre>1 2 3 4 5</pre></span></a></span></a>
+						</li>
+						<li><a href="#"><div class="number">43</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							  <pre>             A</pre>
+								<pre>          A B</pre>
+								<pre>       A B C</pre>
+								<pre>   A B C D</pre>
+								<pre>A B C D E</pre></span></a>
+						</li>
+						<li><a href="#"><div class="number">44</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							  <pre>            1</pre>
+								<pre>         2 3</pre>
+								<pre>      3 4 5</pre>
+								<pre>   4 5 6 7</pre>
+								<pre>5 6 7 8 9</pre></span></a>
+						</li>
+						<li><a href="#"><div class="number">45</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+								<pre>& & & & &</pre>
+								<pre>   & & & &</pre>
+								<pre>       & & &</pre>
+								<pre>          & &</pre>
+								<pre>              &</pre></span></a>
+						</li>
+						<li><a href="#"><div class="number">46</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							  <pre>1 2 3 4 5</pre>
+								<pre>   1 2 3 4</pre>
+								<pre>      1 2 3</pre>
+								<pre>         1 2</pre>
+								<pre>            1</pre></span></a>
+						</li>
+						<li><a href="#"><div class="number">47</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							  <pre>A B C D E</pre>
+								<pre>    A B C D</pre>
+								<pre>       A B C</pre>
+								<pre>           A B</pre>
+								<pre>              A</pre></span></a>
+						</li>
+
+						<li><a href="#"><div class="number">48</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							<pre>1 2 3 4 5</pre>
+								<pre>   2 3 4 5</pre>
+								<pre>      3 4 5</pre>
+								<pre>         4 5</pre>
+								<pre>            5</pre></span></a>
+						</li>
+						<li><a href="#"><div class="number">49</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							<pre>      &      </pre>
+							<pre>     & &  </pre>
+							<pre>    & & &  </pre>
+							<pre>   & & & & </pre>
+							<pre>  & & & & &</pre></span></a>
+						</li>
+						<li><a href="#"><div class="number">50</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							<pre>  & & & & &</pre>
+							<pre>   & & & & </pre>
+							<pre>    & & &  </pre>
+							<pre>     & &  </pre>
+							<pre>       &      </pre>
+						  </span></a>
+						</li>
+						<li><a href="#"><div class="number">51</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							<pre>            &      </pre>
+							<pre>        & & &    </pre>
+							<pre>    & & & & &  </pre>
+							<pre>  & & & & & & </pre>
+							<pre>& & & & & & &</pre></span></a>
+						</li>
+						<li><a href="#"><div class="number">52</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+								<pre>& & & & & & &</pre>
+								<pre>  & & & & & & </pre>
+								<pre>    & & & & &  </pre>
+								<pre>        & & &    </pre>
+								<pre>            &      </pre>
+							</span></a></li>
+						<li><a href="#"><div class="number">53</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							<pre>            &      </pre>
+							<pre>        & & &    </pre>
+							<pre>    & & & & &  </pre>
+							<pre>  & & & & & & </pre>
+							<pre>& & & & &  & &</pre>
+							<pre>  & & & & & & </pre>
+								<pre>    & & & & &  </pre>
+								<pre>        & & &    </pre>
+								<pre>            &      </pre>
+						</span></a>
+						</li>
+
+						<li><a href="#"><div class="number">54</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							<pre>& & & & & & & & &</pre>
+							<pre>& & & &     & & & &</pre>
+							<pre>& & &            & & &</pre>
+							<pre>& &                   & &</pre>
+							<pre>&                          &</pre>
+							<pre>& &                   & &</pre>
+							<pre>& & &            & & &</pre>
+							<pre>& & & &     & & & &</pre>
+							<pre>& & & & & & & & &</pre>
+						</span></a>
+						</li>
+						<li><a href="#"><div class="number">55</div><span>WAP to demonstrate the array.</span></a></li>
+						<li><a href="#"><div class="number">56</div><span>WAP to input number from user and display in an array.</span></a></li>
+						<li><a href="#"><div class="number">57</div><span>WAP to sum n different numbers by array (find total marks secured by students in all subjects).</span></a></li>
+						<li><a href="#"><div class="number">58</div><span>WAP to search an element in an array.</span></a></li>
+						<li><a href="#"><div class="number">59</div><span>WAP to print the largest element of an array.</span></a></li>
+						<li><a href="#"><div class="number">60</div><span>WAP to print the smallest element of an array.</span></a></li>
+						<li><a href="#"><div class="number">61</div><span>WAP to print the second largest element of an array.</span></a></li>
+						<li><a href="#"><div class="number">62</div><span>WAP to print addition of two matrices using a multidimensional array.</span></a></li>
+						<li><a href="#"><div class="number">63</div><span>WAP to print multiplication of two matrices using a multidimensional array.</span></a></li>
+
+						<li><a href="#"><div class="number">64</div><span>WAP for sum of two numbers using function.</span></a></li>
+						<li><a href="#"><div class="number">65</div><span>WAP to build a calculator using functions.</span></a></li>
+						<li><a href="#"><div class="number">66</div><span>WAP to find the largest element in a given array using function.</span></a></li>
+						<li><a href="#"><div class="number">67</div><span>WAP to find the factorial of a number using function.</span></a></li>
+						<li><a href="#"><div class="number">68</div><span>WAP to print Fibonacci series using function.</span></a></li>
+						<li><a href="#"><div class="number">69</div><span>WAP to check whether a year is a leap year or not using function.</span></a></li>
+						<li><a href="#"><div class="number">70</div><span>WAP to find simple interest (float as return type).</span></a></li>
+						<li><a href="#"><div class="number">55</div><span>WAP to swap values of two number using function(Call by value).</span></a></li>
+						<li><a href="#"><div class="number">55</div><span>WAP to swap values of two number using function(Call by reference).</span></a></li>
+						<li><a href="#"><div class="number">69</div><span>WAP to swap values of two number using function(Call by address).</span></a></li>
+						<li><a href="#"><div class="number">70</div><span>WAP to access the value of variable through a pointer.</span></a></li>
+						<li><a href="#"><div class="number">71</div><span>WAP to find sum of first N natural number using recursion.</span></a></li>
+						<li><a href="#"><div class="number">72</div><span>WAP to print Fibonacci series using recursion.</span></a></li>
+						<li><a href="#"><div class="number">73</div><span>WAP to find the factorial of number using recursion.</span></a></li>
+
+						<li><a href="#"><div class="number">74</div><span>WAP to display records of students using Structure.</span></a></li>
+						<li><a href="#"><div class="number">75</div><span>WAP to display records of students using the Union.</span></a></li>
+						<li><a href="#"><div class="number">76</div><span>WAP to display records of five students using Structure.</span></a></li>
+
+						<li><a href="#"><div class="number">77</div><span>WAP to demonstrate the use of classes and objects.</span></a></li>
+						<li><a href="#"><div class="number">78</div><span>WAP to add two numbers using member functions of a class and display the results.</span></a></li>
+						<li><a href="#"><div class="number">79</div><span>WAP to demonstrate the use of scope resolution operators.</span></a></li>
+
+						<li><a href="#"><div class="number">80</div><span>WAP to display the concept of constructor & destructor.</span></a></li>
+						<li><a href="#"><div class="number">81</div><span>WAP to Constructor overloading.</span></a></li>
+
+						<li><a href="#"><div class="number">82</div><span>WAP to demonstrate the single inheritance.</span></a></li>
+						<li><a href="#"><div class="number">83</div><span>WAP to demonstrate the multilevel inheritance.</span></a></li>
+						<li><a href="#"><div class="number">84</div><span>WAP to demonstrate the multiple inheritance.</span></a></li>
+						<li><a href="#"><div class="number">85</div><span>WAP to demonstrate the hierarchical inheritance.</span></a></li>
+						<li><a href="#"><div class="number">86</div><span>WAP to demonstrate the hybrid inheritance.</span></a></li>
+
+						<li><a href="#"><div class="number">87</div><span>WAP to demonstrate the use of friend function.</span></a></li>
+						<li><a href="#"><div class="number">88</div><span>WAP to demonstrate the use of operator overloading using friend function.</span></a></li>
+
+						<li><a href="#"><div class="number">89</div><span>WAP to demonstrate the use of function overloading.</span></a></li>
+						<li><a href="#"><div class="number">90</div><span>WAP to demonstrate the use of function overriding.</span></a></li>
+						<li><a href="#"><div class="number">91</div><span>WAP to demonstrate the use of unary operator overloading.</span></a></li>
+						<li><a href="#"><div class="number">92</div><span>WAP to demonstrate the use of binary operator overloading.</span></a></li>
+						<li><a href="#"><div class="number">93</div><span>WAP to demonstrate the use of virtual functions.</span></a></li>
+
+						<li><a href="#"><div class="number">94</div><span>WAP to demonstrate the use of Stack.</span></a></li>
+						<li><a href="#"><div class="number">95</div><span>WAP to demonstrate the use of Queue.</span></a></li>
+						<li><a href="#"><div class="number">96</div><span>WAP to demonstrate the use of Linked List.</span></a></li>
+					</ul>
+				</div>
+
+				<div class="simple hide">
+					<ul>
+						<li><a href="cplus_prog/1hello_world.html"><div class="number">1</div><span>C++ Program to Print "Hello World!"</span></a></li>
+						<li><a href="#"><div class="number">2</div><span>C++ Program to Print Name entered by user.</span></a></li>
+						<li><a href="#"><div class="number">3</div><span>C++ Program to Print Sum of two Numbers.</span></a></li>
+						<li><a href="#"><div class="number">4</div><span>C++ Program to Print Average of two Numbers.</span></a></li>
+						<li><a href="#"><div class="number">5</div><span>C++ Program to find Reverse of Number</span></a></li>
+						<li><a href="#"><div class="number">6</div><span>C++ Program to find Area of a Circle.</span></a></li>
+						<li><a href="#"><div class="number">7</div><span>C++ Program to find the Sum of all digits </span></a></li>
+						<li><a href="#"><div class="number">8</div><span>C++ Program to find the average of marks scored in five subjects.</span></a></li>
+						<li><a href="#"><div class="number">9</div><span>C++ Program to Swap two Numbers using third variable.</span></a></li>
+						<li><a href="#"><div class="number">10</div><span>C++ Program to Swap two Numbers without using third variable.</span></a></li>
+						<li><a href="#"><div class="number">11</div><span>C++ Program to convert Temperature C to F</span></a></li>
+					</ul>
+				</div>
+
+				<div class="ifelse hide">
+					<ul>
+						<li><a href="#"><div class="number">1</div><span>WAP to find the maximum age of two students.</span></a></li>
+						<li><a href="#"><div class="number">2</div><span>WAP to find the largest number among two numbers.</span></a></li>
+						<li><a href="#"><div class="number">3</div><span>WAP to find the largest number among three numbers.</span></a></li>
+						<li><a href="#"><div class="number">4</div><span>WAP to check if the number is Even or Odd.</span></a></li>
+						<li><a href="#"><div class="number">5</div><span>WAP to check whether a year is a leap year or not.</span></a></li>
+						<li><a href="#"><div class="number">6</div><span>WAP to check whether the entered character is a vowel or consonant.</span></a></li>
+					</ul>
+				</div>
+
+				<div class="switch hide">
+					<ul>
+						<li><a href="#"><div class="number">1</div><span>WAP to make simple calculation for all arithmetic operations (+, -, *, /, %)</span></a></li>
+						<li><a href="#"><div class="number">2</div><span>WAP to check whether the entered character is a vowel or consonant using switch-case.</span></a></li>
+						<li><a href="#"><div class="number">3</div><span>WAP to display day of week as user choice.</span></a></li>
+					</ul>
+				</div>
+
+				<div class="loop hide">
+					<ul>
+						<li><a href="#"><div class="number">1</div><span>WAP to print Hello World five times.</span></a></li>
+						<li><a href="#"><div class="number">2</div><span>WAP to print natural numbers (1 to 10).</span></a></li>
+						<li><a href="#"><div class="number">3</div><span>WAP to print natural numbers in reverse order (10 to 1).</span></a></li>
+						<li><a href="#"><div class="number">4</div><span>WAP to find the factorial of a number using a while loop.</span></a></li>
+						<li><a href="#"><div class="number">5</div><span>WAP to print Fibonacci series until given terms.</span></a></li>
+						<li><a href="#"><div class="number">6</div><span>WAP to display the sum of n natural numbers where n is entered by the user.</span></a></li>
+						<li><a href="#"><div class="number">7</div><span>WAP to display reverse of any number using loop.</span></a></li>
+						<li><a href="#"><div class="number">8</div><span>WAP to sum all the numbers entered by the users until the user enters 0.</span></a></li>
+						<li><a href="#"><div class="number">9</div><span>WAP to print numbers within the range given by the user.</span></a></li>
+						<li><a href="#"><div class="number">10</div><span>WAP to print number table using multiplication operation.</span></a></li>
+						<li><a href="#"><div class="number">11</div><span>WAP to print number table using addition operation.</span></a></li>
+						<li><a href="#"><div class="number">12</div><span>WAP to generate prime numbers series up to n numbers using for loop.</span></a></li>
+						<li><a href="#"><div class="number">13</div><span>WAP to find the sum of all digits of a digit using a loop.</span></a></li>
+					</ul>
+				</div>
+
+				<div class="pattern hide">
+					<ul>
+						<li><a href="#"><div class="number">1</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div><b>*<br>* *<br>* * *<br>* * * *<br>* * * * *</b></span></a>
+						</li>
+						<li><a href="#"><div class="number">2</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>1<br>1 2 <br> 1 2 3<br> 1 2 3 4<br> 1 2 3 4 5</span></a>
+						</li>
+						<li><a href="#"><div class="number">3</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>A<br> A B<br> A B C<br> A B C D<br> A B C D E</span></a>
+						</li>
+						<li><a href="#"><div class="number">4</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>1<br>2 3<br> 3 4 5<br> 4 5 6 7<br> 5 6 7 8 9</span></a>
+						</li>
+						<li><a href="#"><div class="number">5</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>* * * * *<br>* * * *<br>* * * <br> * *<br>*</span></a>
+						</li>
+						<li><a href="#"><div class="number">6</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>1 2 3 4 5<br> 1 2 3 4<br> 1 2 3<br> 1 2<br>1</span></a>
+						</li>
+						<li><a href="#"><div class="number">7</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>A B C D E<br>A B C D<br>A B C<br>A B<br>A</span></a>
+						</li>
+						<li><a href="#"><div class="number">8</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>1 2 3 4 5<br>2 3 4 5<br>3 4 5<br> 4 5<br>5</span></a>
+						</li>
+						<li><a href="#"><div class="number">9</div>
+							<span style="padding-left: 10px;">WAP to print pattern
+								<pre>        *</pre><pre>      * *</pre><pre>    * * *</pre><pre>  * * * *</pre><pre>* * * * *</pre></span></a>
+						</li>
+
+
+						<li><a href="#"><div class="number">10</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+								<pre>            1</pre>
+								<pre>         1 2</pre>
+								<pre>      1 2 3</pre>
+								<pre>   1 2 3 4</pre>
+								<pre>1 2 3 4 5</pre></span></a></span></a>
+						</li>
+						<li><a href="#"><div class="number">11</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							  <pre>             A</pre>
+								<pre>          A B</pre>
+								<pre>       A B C</pre>
+								<pre>   A B C D</pre>
+								<pre>A B C D E</pre></span></a>
+						</li>
+						<li><a href="#"><div class="number">12</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							  <pre>            1</pre>
+								<pre>         2 3</pre>
+								<pre>      3 4 5</pre>
+								<pre>   4 5 6 7</pre>
+								<pre>5 6 7 8 9</pre></span></a>
+						</li>
+						<li><a href="#"><div class="number">13</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+								<pre>& & & & &</pre>
+								<pre>   & & & &</pre>
+								<pre>       & & &</pre>
+								<pre>          & &</pre>
+								<pre>              &</pre></span></a>
+						</li>
+						<li><a href="#"><div class="number">14</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							  <pre>1 2 3 4 5</pre>
+								<pre>   1 2 3 4</pre>
+								<pre>      1 2 3</pre>
+								<pre>         1 2</pre>
+								<pre>            1</pre></span></a>
+						</li>
+						<li><a href="#"><div class="number">15</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							  <pre>A B C D E</pre>
+								<pre>    A B C D</pre>
+								<pre>       A B C</pre>
+								<pre>           A B</pre>
+								<pre>              A</pre></span></a>
+						</li>
+			
+						<li><a href="#"><div class="number">16</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							<pre>1 2 3 4 5</pre>
+								<pre>   2 3 4 5</pre>
+								<pre>      3 4 5</pre>
+								<pre>         4 5</pre>
+								<pre>            5</pre></span></a>
+						</li>
+						<li><a href="#"><div class="number">17</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							<pre>      &      </pre>
+							<pre>     & &  </pre>
+							<pre>    & & &  </pre>
+							<pre>   & & & & </pre>
+							<pre>  & & & & &</pre></span></a>
+						</li>
+						<li><a href="#"><div class="number">18</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							<pre>  & & & & &</pre>
+							<pre>   & & & & </pre>
+							<pre>    & & &  </pre>
+							<pre>     & &  </pre>
+							<pre>       &      </pre>
+						  </span></a>
+						</li>
+						<li><a href="#"><div class="number">19</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							<pre>            &      </pre>
+							<pre>        & & &    </pre>
+							<pre>    & & & & &  </pre>
+							<pre>  & & & & & & </pre>
+							<pre>& & & & & & &</pre></span></a>
+						</li>
+						<li><a href="#"><div class="number">20</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+								<pre>& & & & & & &</pre>
+								<pre>  & & & & & & </pre>
+								<pre>    & & & & &  </pre>
+								<pre>        & & &    </pre>
+								<pre>            &      </pre>
+							</span></a></li>
+						<li><a href="#"><div class="number">21</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							<pre>            &      </pre>
+							<pre>        & & &    </pre>
+							<pre>    & & & & &  </pre>
+							<pre>  & & & & & & </pre>
+							<pre>& & & & &  & &</pre>
+							<pre>  & & & & & & </pre>
+								<pre>    & & & & &  </pre>
+								<pre>        & & &    </pre>
+								<pre>            &      </pre>
+						</span></a>
+						</li>
+
+						<li><a href="#"><div class="number">22</div>
+							<span style="padding-left: 10px;"><div>WAP to print pattern</div>
+							<pre>& & & & & & & & &</pre>
+							<pre>& & & &     & & & &</pre>
+							<pre>& & &            & & &</pre>
+							<pre>& &                   & &</pre>
+							<pre>&                          &</pre>
+							<pre>& &                   & &</pre>
+							<pre>& & &            & & &</pre>
+							<pre>& & & &     & & & &</pre>
+							<pre>& & & & & & & & &</pre>
+						</span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="array hide">
+					<ul>
+						<li><a href="#"><div class="number">1</div><span>WAP to demonstrate the array.</span></a></li>
+						<li><a href="#"><div class="number">2</div><span>WAP to input number from user and display in an array.</span></a></li>
+						<li><a href="#"><div class="number">3</div><span>WAP to sum n different numbers by array (find total marks secured by students in all subjects).</span></a></li>
+						<li><a href="#"><div class="number">4</div><span>WAP to search an element in an array.</span></a></li>
+						<li><a href="#"><div class="number">5</div><span>WAP to print the largest element of an array.</span></a></li>
+						<li><a href="#"><div class="number">6</div><span>WAP to print the smallest element of an array.</span></a></li>
+						<li><a href="#"><div class="number">7</div><span>WAP to print the second largest element of an array.</span></a></li>
+						<li><a href="#"><div class="number">8</div><span>WAP to print addition of two matrices using a multidimensional array.</span></a></li>
+						<li><a href="#"><div class="number">9</div><span>WAP to print multiplication of two matrices using a multidimensional array.</span></a></li>
+					</ul>
+				</div>
+
+				<div class="func hide">
+					<ul>
+						<li><a href="#"><div class="number">1</div><span>WAP to make simple calculation for all arithmetic operations (+, -, *, /, %)</span></a></li>
+						<li><a href="#"><div class="number">2</div><span>WAP to check whether the entered character is a vowel or consonant using switch-case.</span></a></li>
+						<li><a href="#"><div class="number">3</div><span>WAP to display day of week as user choice.</span></a></li>
+					</ul>
+				</div>
+
+				<div class="struc-union hide">
+					<ul>
+						<li><a href="#"><div class="number">1</div><span>WAP to display records of students using Structure.</span></a></li>
+						<li><a href="#"><div class="number">2</div><span>WAP to display records of students using the Union.</span></a></li>
+						<li><a href="#"><div class="number">3</div><span>WAP to display records of five students using Structure.</span></a></li>
+					</ul>
+				</div>
+				<div class="class-obj hide">
+					<ul>
+						<li><a href="#"><div class="number">1</div><span>WAP to demonstrate the use of classes and objects.</span></a></li>
+						<li><a href="#"><div class="number">2</div><span>WAP to add two numbers using member functions of a class and display the results.</span></a></li>
+						<li><a href="#"><div class="number">3</div><span>WAP to demonstrate the use of scope resolution operators.</span></a></li>
+					</ul>
+				</div>
+				<div class="cons-dest hide">
+					<ul>
+						<li><a href="#"><div class="number">1</div><span>WAP to display the concept of constructor & destructor.</span></a></li>
+						<li><a href="#"><div class="number">2</div><span>WAP to Constructor overloading.</span></a></li>
+					</ul>
+				</div>
+
+				<div class="inherit hide">
+					<ul>
+						<li><a href="#"><div class="number">1</div><span>WAP to demonstrate the single inheritance.</span></a></li>
+						<li><a href="#"><div class="number">2</div><span>WAP to demonstrate the multilevel inheritance.</span></a></li>
+						<li><a href="#"><div class="number">3</div><span>WAP to demonstrate the multiple inheritance.</span></a></li>
+						<li><a href="#"><div class="number">4</div><span>WAP to demonstrate the hierarchical inheritance.</span></a></li>
+						<li><a href="#"><div class="number">5</div><span>WAP to demonstrate the hybrid inheritance.</span></a></li>
+					</ul>
+				</div>
+
+				<div class="polymorphism hide">
+					<ul>
+						<li><a href="#"><div class="number">1</div><span>WAP to demonstrate the use of function overloading.</span></a></li>
+						<li><a href="#"><div class="number">2</div><span>WAP to demonstrate the use of function overriding.</span></a></li>
+						<li><a href="#"><div class="number">3</div><span>WAP to demonstrate the use of unary operator overloading.</span></a></li>
+						<li><a href="#"><div class="number">4</div><span>WAP to demonstrate the use of binary operator overloading.</span></a></li>
+						<li><a href="#"><div class="number">5</div><span>WAP to demonstrate the use of virtual functions.</span></a></li>
+					</ul>
+				</div>
+				<div class="stack hide">
+					<ul>
+						<li><a href="#"><div class="number">1</div><span>WAP to demonstrate the use of Stack.</span></a></li>
+					</ul>
+				</div>
+
+				<div class="queue hide">
+					<ul>
+						<li><a href="#"><div class="number">1</div><span>WAP to demonstrate the use of Queue.</span></a></li>
+					</ul>
+				</div>
+				<div class="linked-list hide">
+					<ul>
+							<li><a href="#"><div class="number">1</div><span>WAP to demonstrate the use of Linked List.</span></a></li>
+					</ul>
+				</div>
+
+			</div>
+
+	</div>
+</section>
+<script>
+ 
+ function openNav() {
+
+  document.getElementById("side").style.width = "98%";
+  document.getElementById("side").style.position = 'absolute' ;
+  document.getElementById("side").style.zIndex = 1;
+  document.getElementById("side").style.background = 'white';
+  document.getElementById("side").style.display = 'block' ;
+   document.getElementById("side").classList.remove("widthZero")
+}
+
+function closeNav() {
+  document.getElementById("side").style.width = "0";
+  document.getElementById("side").style.display = 'none' ;
+}
+
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+function allprogram() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("all-search");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myProgram");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+$(document).ready(function(){
+
+	$("ul li#all").click(function(){
+		$(".text-change").text("All Examples");
+	}); 
+
+	$("ul li#simple-prog").click(function(){
+		$(".text-change").text("Simple Programs");
+	}); 
+
+	$("ul li#if-else").click(function(){
+		$(".text-change").text("If-Else");
+	}); 
+
+	$("ul li#Switch-case").click(function(){
+		$(".text-change").text("Switch-Case");
+	}); 
+
+	$("ul li#loop-statement").click(function(){
+		$(".text-change").text("Loop Statements");
+	}); 
+
+	$("ul li#patterns").click(function(){
+		$(".text-change").text("Patterns");
+	}); 
+
+	$("ul li#array").click(function(){
+		$(".text-change").text("Array");
+	}); 
+
+	$("ul li#functions").click(function(){
+		$(".text-change").text("Functions");
+	}); 
+
+	$("ul li#structure-union").click(function(){
+		$(".text-change").text("Structure and Union");
+	}); 
+
+	$("ul li#class-object").click(function(){
+		$(".text-change").text("Class and Object");
+	}); 
+
+	$("ul li#cons-dest").click(function(){
+		$(".text-change").text("Constructor and Destructor");
+	});
+
+	$("ul li#inheritance").click(function(){
+		$(".text-change").text("Inheritance");
+	});
+
+	$("ul li#polymorphism").click(function(){
+		$(".text-change").text("Polymorphism");
+	});
+
+	$("ul li#stack").click(function(){
+		$(".text-change").text("Stack");
+	}); 
+
+	$("ul li#queue").click(function(){
+		$(".text-change").text("Queue");
+	}); 
+
+	$("ul li#linked-list").click(function(){
+		$(".text-change").text("Linked List");
+	}); 
+	
+});
+
+// -------------------------------------------
+
+</script>
+
+<script type="text/javascript">
+	$(document).on('click', '.programs', function() {
+	  var show = $(this).data('show');
+	  $('#side').addClass("widthZero");
+
+	  $(show).removeClass("hide").siblings().addClass("hide");
+
+	});
+</script>
+</body>
+</html>
